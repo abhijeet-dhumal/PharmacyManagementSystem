@@ -7,7 +7,7 @@ root.configure(width=1500,height=600,bg='BLACK')
 var=-1
 
 import mysql.connector as connector
-mydb = connector.connect(host='localhost',port='3305',user='root',password='Abhijeet652@',database='pharmacy_management')
+mydb = connector.connect(host='localhost',port='3305',user='root',password='',database='pharmacy_management')
 # create userid if not
 def create_medicine_table_ifnot():
     query='create table if not exists medicines(medid int(10) auto_increment,medname varchar(200),medprice int(10),medquantity int(5)medcategory varchar(100),meddiscount int(3), primary key(medid))'
